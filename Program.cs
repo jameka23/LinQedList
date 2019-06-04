@@ -47,14 +47,28 @@ namespace linqedList
                 "Francisco", "Tre"
             };
 
-            IEnumerable<string> descend = from name in names 
-                        orderby name descending
-                        select name;
+            IEnumerable<string> descend = from name in names
+                                          orderby name descending
+                                          select name;
 
+            // foreach(string theName in descend){
+            //     Console.WriteLine($"{theName}");
+            // }
             // List<string> descend =;
-            foreach(string theName in descend){
-                Console.WriteLine($"{theName}");
-            }
+
+            // Build a collection of these numbers sorted in ascending order
+            List<int> nums = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+
+            IEnumerable<int> ascend = from num in nums
+                                      orderby num
+                                      select num;
+
+            // foreach(int asc in ascend){
+            //     Console.WriteLine($"{asc}");
+            // };
         }
     }
 }
