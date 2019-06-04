@@ -51,9 +51,6 @@ namespace linqedList
                                           orderby name descending
                                           select name;
 
-            // foreach(string theName in descend){
-            //     Console.WriteLine($"{theName}");
-            // }
             // List<string> descend =;
 
             // Build a collection of these numbers sorted in ascending order
@@ -66,9 +63,28 @@ namespace linqedList
                                       orderby num
                                       select num;
 
-            // foreach(int asc in ascend){
-            //     Console.WriteLine($"{asc}");
-            // };
+            // --A G G R E G A T I O N  O P E R A T I O N S--
+            // Output how many numbers are in this list
+            List<int> theNums = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+            Console.WriteLine(theNums.Count);
+
+            // How much money have we made?
+            List<double> purchases = new List<double>()
+            {
+                2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
+            };
+            Console.WriteLine(purchases.Sum());
+
+
+            // What is our most expensive product?
+            List<double> prices = new List<double>()
+            {
+                879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
+            };
+            Console.WriteLine(prices.Max());
         }
     }
 }
