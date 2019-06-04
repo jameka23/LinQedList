@@ -104,6 +104,7 @@ namespace linqedList
                     Console.WriteLine($"{num}");
                 }
             }
+
             
         }
     }
